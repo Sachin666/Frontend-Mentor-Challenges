@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: hsl(30, 38%, 92%);
+}
+
+/* 
+======================
+    TYPOGRAPHY
+=====================
+*/
+
+.product,
+.product-detail,
+small {
+  color: hsl(220, 15%, 55%);
+}
+
+.product {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 0.9em;
+}
+
+.product-detail {
+  font-size: 0.93rem;
+  margin: 0.9em 0;
+  line-height: 1.6;
+}
+
+.price h2 {
+  font-size: 2.5rem;
+  margin-right: 0.6em;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+
+small {
+  text-decoration: line-through;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1;
+  font-family: "Fraunces", serif;
+  color: #252525;
+}
+
+/* 
+=====================
+        Main
+=====================
+*/
+
+.container {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+  background: rebeccapurple;
+  background-image: url("./images/image-product-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 350px;
+}
+
+.card-details {
+  padding: 1.5em;
+  background: hsl(0, 0%, 100%);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  margin: 1em 0;
+  padding: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+}
+
+@media (min-width: 525px) {
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    flex-direction: row;
+    max-width: 800px;
+  }
+
+  .card-img {
+    background-image: url("./images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 0 0 5px;
+    width: 50%;
+  }
+
+  .card-details {
+    width: 50%;
+    border-radius: 0 5px 5px 0;
+  }
+}
