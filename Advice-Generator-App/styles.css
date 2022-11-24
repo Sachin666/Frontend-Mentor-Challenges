@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+.advice {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(218, 23%, 16%);
+}
+
+h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 1em 0;
+}
+
+p {
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: hsl(150, 100%, 66%);
+}
+
+.advice {
+  justify-content: center;
+  align-items: center;
+  max-width: 525px;
+  background: hsl(217, 19%, 24%);
+  color: whitesmoke;
+  position: relative;
+  padding: 2em 1em;
+  border-radius: 20px;
+}
+
+.divider {
+  width: 90%;
+  margin: 1em 0;
+}
+
+.advice button {
+  position: absolute;
+  bottom: -20px;
+  padding: 0.8em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  border: none;
+  background: hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+
+.advice button:hover {
+  box-shadow: 2px 2px 20px hsl(150, 100%, 66%);
+  transition: all 0.3s ease;
+}
+
+.advice button img {
+  width: 20px;
+}
+
+.attribution {
+  margin-top: 2em;
+  font-size: 15px;
+  text-align: center;
+  color: whitesmoke;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
