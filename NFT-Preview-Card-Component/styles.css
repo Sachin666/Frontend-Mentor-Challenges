@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  margin: 0.7em 0;
+}
+
+p {
+  font-size: 1.125rem;
+  color: hsl(217, 12%, 63%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: hsl(217, 54%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 350px;
+  background: hsl(216, 50%, 16%);
+  padding: 1.2em;
+  border-radius: 10px;
+}
+
+.main-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: hsl(178, 100%, 50%);
+  width: 100%;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.img-container:hover .overlay {
+  opacity: 0.5;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.crypto {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.1em 0;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.crypto-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.crypto-img {
+  margin-right: 3px;
+}
+
+.eth {
+  color: hsl(178, 100%, 50%);
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  padding-top: 1.1em;
+}
+
+.creator img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.creator p {
+  font-size: 1rem;
+}
+
+.name {
+  color: #fff;
+}
+
+h2:hover,
+.name:hover {
+  color: hsl(178, 100%, 50%);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 15px;
+  color: hsl(217, 12%, 63%);
+}
+.attribution a {
+  color: hsl(178, 100%, 50%);
+}
