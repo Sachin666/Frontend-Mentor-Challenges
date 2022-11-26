@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(204, 43%, 93%);
+}
+
+.container {
+  width: 100%;
+  max-width: 625px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+}
+
+.community {
+  padding: 2em;
+  background: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.community h1 {
+  margin-bottom: 0.7em;
+  color: hsl(179, 62%, 43%);
+}
+
+.community h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 0.5em;
+}
+
+.community p {
+  color: #252525;
+}
+
+.section {
+  display: flex;
+}
+
+.price {
+  flex: 1 1 50%;
+  padding: 2em;
+  background: hsl(179, 62%, 43%);
+  border-radius: 0 0 0 10px;
+  color: #fff;
+}
+
+small {
+  color: hsl(204, 43%, 93%);
+}
+
+.btn {
+  width: 100%;
+  padding: 1em 0;
+  margin-top: 1.5em;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+  border: none;
+  background: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  margin: 1em 0 0.6em 0;
+}
+
+.total p {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 0.3em;
+}
+
+.about {
+  flex: 1 1 50%;
+  padding: 2em;
+  color: hsl(204, 43%, 93%);
+  background: #4abebd;
+  border-radius: 0 0 10px 0;
+}
+
+.about ul {
+  list-style-type: none;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-top: 2em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
